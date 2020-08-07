@@ -1,4 +1,4 @@
-update=14.07.2020 20:06:50
+update=07.08.2020 16:46:50
 version=1
 last_client=kicad
 [general]
@@ -12,6 +12,16 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -22,7 +32,7 @@ AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.2
+MinTrackWidth=0
 MinViaDiameter=0.4
 MinViaDrill=0.3
 MinMicroViaDiameter=0.2
@@ -248,6 +258,17 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=Power
 Clearance=0.2
+TrackWidth=1
+ViaDiameter=1.2
+ViaDrill=0.6
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=Probe
+Clearance=0.8
 TrackWidth=1
 ViaDiameter=1.2
 ViaDrill=0.6

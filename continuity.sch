@@ -28,13 +28,13 @@ $EndComp
 $Comp
 L Device:D D3
 U 1 1 5F0D9E40
-P 4150 3600
-F 0 "D3" V 4104 3679 50  0000 L CNN
-F 1 "1N4148" V 4195 3679 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-523" H 4150 3600 50  0001 C CNN
-F 3 "~" H 4150 3600 50  0001 C CNN
-F 4 "1N 4148WT7 DII" V 4150 3600 50  0001 C CNN "Vendor"
-	1    4150 3600
+P 4150 2800
+F 0 "D3" V 4104 2879 50  0000 L CNN
+F 1 "1N4148" V 4195 2879 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-523" H 4150 2800 50  0001 C CNN
+F 3 "~" H 4150 2800 50  0001 C CNN
+F 4 "1N 4148WT7 DII" V 4150 2800 50  0001 C CNN "Vendor"
+	1    4150 2800
 	0    1    1    0   
 $EndComp
 $Comp
@@ -50,27 +50,27 @@ F 4 "1N 4148WT7 DII" V 4150 4450 50  0001 C CNN "Vendor"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R1
+L Device:R Rb1
 U 1 1 5F0DA447
 P 2750 850
-F 0 "R1" V 2543 850 50  0000 C CNN
-F 1 "240" V 2634 850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2680 850 50  0001 C CNN
+F 0 "Rb1" V 2543 850 50  0000 C CNN
+F 1 "470" V 2634 850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2680 850 50  0001 C CNN
 F 3 "~" H 2750 850 50  0001 C CNN
-F 4 "RND 0805 1 240" H 2750 850 50  0001 C CNN "Vendor"
+F 4 "RND 155HP06 DD" H 2750 850 50  0001 C CNN "Vendor"
 	1    2750 850 
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5F0DB1CD
-P 2750 1300
-F 0 "R2" V 2543 1300 50  0000 C CNN
-F 1 "510" V 2634 1300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2680 1300 50  0001 C CNN
-F 3 "~" H 2750 1300 50  0001 C CNN
-F 4 "RND 0603 1 510" H 2750 1300 50  0001 C CNN "Vendor"
-	1    2750 1300
+P 3250 1300
+F 0 "R2" V 3043 1300 50  0000 C CNN
+F 1 "510" V 3134 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3180 1300 50  0001 C CNN
+F 3 "~" H 3250 1300 50  0001 C CNN
+F 4 "RND 0603 1 510" H 3250 1300 50  0001 C CNN "Vendor"
+	1    3250 1300
 	0    1    1    0   
 $EndComp
 $Comp
@@ -112,14 +112,14 @@ $EndComp
 $Comp
 L Device:Speaker_Crystal LS1
 U 1 1 5F0DE1FE
-P 7700 2500
-F 0 "LS1" H 7875 2496 50  0000 L CNN
-F 1 "Speaker_Crystal" H 7875 2405 50  0000 L CNN
-F 2 "Buzzer_Beeper:Buzzer_CUI_CPT-9019S-SMT" H 7665 2450 50  0001 C CNN
-F 3 "~" H 7665 2450 50  0001 C CNN
-F 4 "VIS 3580" H 7700 2500 50  0001 C CNN "Vendor"
-	1    7700 2500
-	1    0    0    -1  
+P 7500 2700
+F 0 "LS1" H 7675 2696 50  0000 L CNN
+F 1 "Speaker_Crystal" H 7675 2605 50  0000 L CNN
+F 2 "Buzzer_Beeper:Buzzer_15x7.5RM7.6" H 7465 2650 50  0001 C CNN
+F 3 "~" H 7465 2650 50  0001 C CNN
+F 4 "VIS 3580" H 7500 2700 50  0001 C CNN "Vendor"
+	1    7500 2700
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
@@ -230,10 +230,10 @@ F 4 "BCP 55-16 SMD" H 7400 4000 50  0001 C CNN "Vendor"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D1
+L Device:LED RED1
 U 1 1 5F0E716E
 P 6450 1600
-F 0 "D1" H 6443 1345 50  0000 C CNN
+F 0 "RED1" H 6443 1345 50  0000 C CNN
 F 1 "LED" H 6443 1436 50  0000 C CNN
 F 2 "LED_SMD:LED_PLCC-2" H 6450 1600 50  0001 C CNN
 F 3 "~" H 6450 1600 50  0001 C CNN
@@ -346,7 +346,7 @@ L Device:R R3
 U 1 1 5F0F73FA
 P 4600 1550
 F 0 "R3" H 4530 1504 50  0000 R CNN
-F 1 "5k" H 4530 1595 50  0000 R CNN
+F 1 "4,7k" H 4530 1595 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4530 1550 50  0001 C CNN
 F 3 "~" H 4600 1550 50  0001 C CNN
 F 4 "RND 0603 1 4,7K" H 4600 1550 50  0001 C CNN "Vendor"
@@ -390,9 +390,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 3900 3400 3900
 Wire Wire Line
-	3700 3900 4150 3900
-Wire Wire Line
-	4150 3900 4150 3750
+	4150 3900 4150 3450
 Wire Wire Line
 	4150 4300 4150 3900
 Connection ~ 4150 3900
@@ -413,18 +411,12 @@ Wire Wire Line
 Wire Wire Line
 	6600 4500 6600 4000
 Wire Wire Line
-	6800 4000 6600 4000
-Wire Wire Line
-	7100 4000 7200 4000
-Wire Wire Line
 	7500 4200 7500 4400
 Wire Wire Line
 	7600 3800 7500 3800
 Wire Wire Line
-	7500 2600 7500 3800
+	7500 3100 7500 3550
 Connection ~ 7500 3800
-Wire Wire Line
-	7500 2500 7500 850 
 Connection ~ 7500 850 
 Wire Wire Line
 	7500 850  5350 850 
@@ -456,7 +448,7 @@ Connection ~ 5350 1400
 Wire Wire Line
 	5350 1000 5350 850 
 Wire Wire Line
-	5350 850  4150 850 
+	5350 850  4400 850 
 Connection ~ 5350 850 
 Wire Wire Line
 	2600 850  2300 850 
@@ -466,7 +458,7 @@ Connection ~ 2300 1300
 Wire Wire Line
 	2300 1300 2300 2050
 Wire Wire Line
-	2900 1300 4600 1300
+	3400 1300 3750 1300
 Wire Wire Line
 	4600 1300 4600 1400
 Wire Wire Line
@@ -474,11 +466,6 @@ Wire Wire Line
 Wire Wire Line
 	4600 1200 4600 1300
 Connection ~ 4600 1300
-Wire Wire Line
-	4150 3450 4150 850 
-Connection ~ 4150 850 
-Wire Wire Line
-	4150 850  2900 850 
 Wire Wire Line
 	4600 1700 4600 1850
 Wire Wire Line
@@ -502,20 +489,18 @@ Wire Wire Line
 	5800 2050 6300 2050
 Connection ~ 6300 2050
 Wire Wire Line
-	6300 2050 6300 2750
+	6300 2050 6300 2250
 Wire Wire Line
 	4700 4050 4700 3900
 Connection ~ 4700 3900
 Wire Wire Line
 	4700 3900 5000 3900
 Wire Wire Line
-	4150 3900 4700 3900
-Wire Wire Line
 	4700 4350 4700 4600
 Wire Wire Line
 	4400 4600 4700 4600
 $Comp
-L Amplifier_Operational:MCP6L91RT-EOT U1
+L Amplifier_Operational:MCP6L91T-EOT U1
 U 1 1 5F11ED7B
 P 6300 3800
 F 0 "U1" H 6644 3846 50  0000 L CNN
@@ -571,60 +556,19 @@ F 4 "" V 2400 3000 50  0001 C CNN "Feld4"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2300 3300 2300 3900
+	2300 3300 2300 3600
 Wire Wire Line
-	8800 850  8800 1800
-Wire Wire Line
-	8800 2100 8800 2400
-$Comp
-L Connector:Conn_01x04_Female J2
-U 1 1 5F0FDA6A
-P 8600 2000
-F 0 "J2" H 8628 1976 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 8628 1885 50  0000 L CNN
-F 2 "continuity:KEYSTONE_1012" H 8600 2000 50  0001 C CNN
-F 3 "~" H 8600 2000 50  0001 C CNN
-F 4 "KEYSTONE 1012" H 8600 2000 50  0001 C CNN "Vendor"
-	1    8600 2000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8800 1900 8800 2000
-$Comp
-L Connector:Conn_01x01_Female J1
-U 1 1 5F105D4A
-P 2100 3900
-F 0 "J1" H 2500 3900 50  0000 C CNN
-F 1 "Conn_01x01_Female" H 2400 3750 50  0000 C CNN
-F 2 "MountingHole:MountingHole_4mm_Pad_Via" H 2100 3900 50  0001 C CNN
-F 3 "~" H 2100 3900 50  0001 C CNN
-F 4 "R941921603" H 2100 3900 50  0001 C CNN "Vendor"
-	1    2100 3900
-	-1   0    0    1   
-$EndComp
-Connection ~ 2300 3900
-$Comp
-L Connector:Conn_01x01_Female J3
-U 1 1 5F10A688
-P 2100 4000
-F 0 "J3" H 2500 4000 50  0000 C CNN
-F 1 "Conn_01x01_Female" H 2350 4100 50  0000 C CNN
-F 2 "MountingHole:MountingHole_4mm_Pad_Via" H 2100 4000 50  0001 C CNN
-F 3 "~" H 2100 4000 50  0001 C CNN
-F 4 "R941920603" H 2100 4000 50  0001 C CNN "Vendor"
-	1    2100 4000
-	-1   0    0    1   
-$EndComp
+	8800 850  8800 1700
 $Comp
 L Mechanical:Housing N1
 U 1 1 5F10C25A
-P 8900 3450
-F 0 "N1" H 9053 3484 50  0000 L CNN
-F 1 "Housing" H 9053 3393 50  0000 L CNN
-F 2 "" H 8950 3500 50  0001 C CNN
-F 3 "~" H 8950 3500 50  0001 C CNN
-F 4 "PL 2600 SET" H 8900 3450 50  0001 C CNN "Vendor"
-	1    8900 3450
+P 9050 3500
+F 0 "N1" H 9203 3534 50  0000 L CNN
+F 1 "Testkabel" H 9203 3443 50  0000 L CNN
+F 2 "" H 9100 3550 50  0001 C CNN
+F 3 "~" H 9100 3550 50  0001 C CNN
+F 4 "PL 2600 SET" H 9050 3500 50  0001 C CNN "Vendor"
+	1    9050 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -635,8 +579,418 @@ F 0 "N2" H 9153 4084 50  0000 L CNN
 F 1 "Housing" H 9153 3993 50  0000 L CNN
 F 2 "" H 9050 4100 50  0001 C CNN
 F 3 "~" H 9050 4100 50  0001 C CNN
-F 4 "RND 455-00908" H 9000 4050 50  0001 C CNN "Vendor"
+F 4 "1553CBKBAT " H 9000 4050 50  0001 C CNN "Vendor"
 	1    9000 4050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F12CAC5
+P 2000 5250
+F 0 "H1" H 2100 5296 50  0000 L CNN
+F 1 "MountingHole" H 2100 5205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 5250 50  0001 C CNN
+F 3 "~" H 2000 5250 50  0001 C CNN
+	1    2000 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F12E085
+P 2000 5800
+F 0 "H2" H 2100 5846 50  0000 L CNN
+F 1 "MountingHole" H 2100 5755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 5800 50  0001 C CNN
+F 3 "~" H 2000 5800 50  0001 C CNN
+	1    2000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F12F625
+P 2000 6250
+F 0 "H3" H 2100 6296 50  0000 L CNN
+F 1 "MountingHole" H 2100 6205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2000 6250 50  0001 C CNN
+F 3 "~" H 2000 6250 50  0001 C CNN
+	1    2000 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F130C49
+P 2050 6650
+F 0 "H4" H 2150 6696 50  0000 L CNN
+F 1 "MountingHole" H 2150 6605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2050 6650 50  0001 C CNN
+F 3 "~" H 2050 6650 50  0001 C CNN
+	1    2050 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 1800 8800 2300
+$Comp
+L Mechanical:Housing N3
+U 1 1 5F14F2B7
+P 9800 3000
+F 0 "N3" H 9953 3034 50  0000 L CNN
+F 1 "LED Fassung" H 9953 2943 50  0000 L CNN
+F 2 "" H 9850 3050 50  0001 C CNN
+F 3 "~" H 9850 3050 50  0001 C CNN
+F 4 "EBF A-5" H 9800 3000 50  0001 C CNN "Vendor"
+	1    9800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male BAT1
+U 1 1 5F1518C1
+P 8600 1800
+F 0 "BAT1" H 8572 1682 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 8572 1773 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 8600 1800 50  0001 C CNN
+F 3 "~" H 8600 1800 50  0001 C CNN
+	1    8600 1800
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male RED2
+U 1 1 5F15390C
+P 6900 1600
+F 0 "RED2" H 6872 1482 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 6872 1573 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 6900 1600 50  0001 C CNN
+F 3 "~" H 6900 1600 50  0001 C CNN
+	1    6900 1600
+	-1   0    0    1   
+$EndComp
+Connection ~ 6700 1600
+Wire Wire Line
+	6700 1500 6700 1250
+Wire Wire Line
+	6700 1250 6300 1250
+Wire Wire Line
+	6300 1250 6300 1600
+$Comp
+L Connector:Conn_01x02_Male PROBE1
+U 1 1 5F15FEF7
+P 2100 4000
+F 0 "PROBE1" H 2072 3882 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 2072 3973 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2100 4000 50  0001 C CNN
+F 3 "~" H 2100 4000 50  0001 C CNN
+	1    2100 4000
+	1    0    0    1   
+$EndComp
+Connection ~ 2300 3900
+Text Label 2450 3900 0    50   ~ 0
+Probe
+$Comp
+L Device:R Ra1
+U 1 1 5F1870F4
+P 2750 950
+F 0 "Ra1" V 2700 1300 50  0000 C CNN
+F 1 "470" V 2800 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2680 950 50  0001 C CNN
+F 3 "~" H 2750 950 50  0001 C CNN
+F 4 "RND 155HP06 DD" H 2750 950 50  0001 C CNN "Vendor"
+	1    2750 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 950  2600 850 
+Connection ~ 2600 850 
+Wire Wire Line
+	2900 950  2900 850 
+Connection ~ 2900 850 
+Text Label 4150 3900 0    50   ~ 0
+Probe_uA
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 5F1BF2E4
+P 3700 5700
+F 0 "J3" H 3728 5726 50  0000 L CNN
+F 1 "Buchse Schwarz" H 3728 5635 50  0000 L CNN
+F 2 "" H 3700 5700 50  0001 C CNN
+F 3 "~" H 3700 5700 50  0001 C CNN
+F 4 "R941920603" H 3700 5700 50  0001 C CNN "Vendor"
+	1    3700 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 5F1C0200
+P 3700 6050
+F 0 "J5" H 3728 6076 50  0000 L CNN
+F 1 "Buchse Rot" H 3728 5985 50  0000 L CNN
+F 2 "" H 3700 6050 50  0001 C CNN
+F 3 "~" H 3700 6050 50  0001 C CNN
+F 4 "R941921603" H 3700 6050 50  0001 C CNN "Vendor"
+	1    3700 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5F2DDA9A
+P 5250 5700
+F 0 "FID1" H 5335 5746 50  0000 L CNN
+F 1 "Fiducial" H 5335 5655 50  0000 L CNN
+F 2 "Fiducial:Fiducial_Modern_CopperTop" H 5250 5700 50  0001 C CNN
+F 3 "~" H 5250 5700 50  0001 C CNN
+	1    5250 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5F2DE2FF
+P 5250 6100
+F 0 "FID2" H 5335 6146 50  0000 L CNN
+F 1 "Fiducial" H 5335 6055 50  0000 L CNN
+F 2 "Fiducial:Fiducial_Modern_CopperTop" H 5250 6100 50  0001 C CNN
+F 3 "~" H 5250 6100 50  0001 C CNN
+	1    5250 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Flag TP1
+U 1 1 5F2DFF68
+P 4400 850
+F 0 "TP1" H 4660 944 50  0000 L CNN
+F 1 "VCC" H 4660 853 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4600 850 50  0001 C CNN
+F 3 "~" H 4600 850 50  0001 C CNN
+	1    4400 850 
+	1    0    0    -1  
+$EndComp
+Connection ~ 4400 850 
+$Comp
+L Connector:TestPoint_Flag TP3
+U 1 1 5F2E350F
+P 3750 1300
+F 0 "TP3" H 4010 1394 50  0000 L CNN
+F 1 "SENSE" H 4010 1303 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3950 1300 50  0001 C CNN
+F 3 "~" H 3950 1300 50  0001 C CNN
+	1    3750 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3750 1300
+Wire Wire Line
+	3750 1300 4600 1300
+$Comp
+L Connector:TestPoint_Flag TP5
+U 1 1 5F2E3FE4
+P 6300 2450
+F 0 "TP5" H 6560 2544 50  0000 L CNN
+F 1 "VCC_SW" H 6560 2453 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 6500 2450 50  0001 C CNN
+F 3 "~" H 6500 2450 50  0001 C CNN
+	1    6300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Flag TP7
+U 1 1 5F2E496D
+P 7500 3550
+F 0 "TP7" H 7760 3644 50  0000 L CNN
+F 1 "OUT" H 7760 3553 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 7700 3550 50  0001 C CNN
+F 3 "~" H 7700 3550 50  0001 C CNN
+	1    7500 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7500 3550
+Wire Wire Line
+	7500 3550 7500 3800
+$Comp
+L Connector:TestPoint_Flag TP8
+U 1 1 5F2E517C
+P 8800 2300
+F 0 "TP8" H 9060 2394 50  0000 L CNN
+F 1 "GND" H 9060 2303 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 9000 2300 50  0001 C CNN
+F 3 "~" H 9000 2300 50  0001 C CNN
+	1    8800 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 8800 2300
+Wire Wire Line
+	8800 2300 8800 2400
+$Comp
+L Connector:TestPoint_Flag TP2
+U 1 1 5F2E5616
+P 2300 3600
+F 0 "TP2" H 2560 3694 50  0000 L CNN
+F 1 "PROBE" H 2560 3603 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 2500 3600 50  0001 C CNN
+F 3 "~" H 2500 3600 50  0001 C CNN
+	1    2300 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 3600
+Wire Wire Line
+	2300 3600 2300 3900
+$Comp
+L Connector:TestPoint_Flag TP4
+U 1 1 5F2E5DBA
+P 4150 3450
+F 0 "TP4" H 4410 3544 50  0000 L CNN
+F 1 "PROBE_uA" H 4410 3453 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4350 3450 50  0001 C CNN
+F 3 "~" H 4350 3450 50  0001 C CNN
+	1    4150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Flag TP6
+U 1 1 5F2E6619
+P 6600 4500
+F 0 "TP6" V 6662 4640 50  0000 L CNN
+F 1 "KOMP_OUT" V 6753 4640 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 6800 4500 50  0001 C CNN
+F 3 "~" H 6800 4500 50  0001 C CNN
+	1    6600 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Net-Tie_2 NT1
+U 1 1 5F34341A
+P 2700 1300
+F 0 "NT1" H 2700 1481 50  0000 C CNN
+F 1 "Net-Tie_2" H 2700 1400 50  0000 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 2700 1300 50  0001 C CNN
+F 3 "~" H 2700 1300 50  0001 C CNN
+	1    2700 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1300 3100 1300
+Text Label 6600 3950 0    50   ~ 0
+KOMP_OUT
+Wire Wire Line
+	7100 4000 7200 4000
+Wire Wire Line
+	3700 3900 4150 3900
+$Comp
+L Device:LED GREEN1
+U 1 1 5F39B545
+P 8300 2800
+F 0 "GREEN1" H 8293 2545 50  0000 C CNN
+F 1 "LED" H 8293 2636 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 8300 2800 50  0001 C CNN
+F 3 "~" H 8300 2800 50  0001 C CNN
+F 4 "SEO SUYT 801" H 8300 2800 50  0001 C CNN "Vendor"
+	1    8300 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5F39BAA0
+P 8450 2950
+F 0 "R14" H 8380 2904 50  0000 R CNN
+F 1 "240" H 8380 2995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8380 2950 50  0001 C CNN
+F 3 "~" H 8450 2950 50  0001 C CNN
+F 4 "RND 0603 1 240" H 8450 2950 50  0001 C CNN "Vendor"
+	1    8450 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male GREEN2
+U 1 1 5F39C058
+P 8650 2800
+F 0 "GREEN2" H 8622 2682 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 8622 2773 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 8650 2800 50  0001 C CNN
+F 3 "~" H 8650 2800 50  0001 C CNN
+	1    8650 2800
+	-1   0    0    1   
+$EndComp
+Connection ~ 8450 2800
+Wire Wire Line
+	7500 850  7500 2500
+Wire Wire Line
+	7500 2500 7850 2500
+Wire Wire Line
+	7850 2500 7850 2700
+Wire Wire Line
+	7900 2800 7800 2800
+Wire Wire Line
+	7850 2700 7700 2700
+Wire Wire Line
+	8150 2700 8150 2800
+Wire Wire Line
+	8150 2700 8200 2700
+Wire Wire Line
+	7500 3100 7900 3100
+$Comp
+L Device:R R15
+U 1 1 5F2D8896
+P 7900 2950
+F 0 "R15" H 7830 2904 50  0000 R CNN
+F 1 "240" H 7830 2995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7830 2950 50  0001 C CNN
+F 3 "~" H 7900 2950 50  0001 C CNN
+F 4 "RND 0603 1 240" H 7900 2950 50  0001 C CNN "Vendor"
+	1    7900 2950
+	-1   0    0    1   
+$EndComp
+Connection ~ 7900 3100
+Wire Wire Line
+	7900 3100 8450 3100
+Connection ~ 6600 4500
+Wire Wire Line
+	6600 4000 6800 4000
+Wire Wire Line
+	4400 850  4150 850 
+Wire Wire Line
+	4150 850  2900 850 
+Connection ~ 4150 850 
+Wire Wire Line
+	4150 2650 4150 850 
+Connection ~ 4150 3450
+Wire Wire Line
+	4150 3450 4150 2950
+Connection ~ 6300 2450
+Wire Wire Line
+	6300 2450 6300 2750
+$Comp
+L Connector:Conn_01x02_Male LS2
+U 1 1 5F2EA8A3
+P 6950 2650
+F 0 "LS2" H 6922 2532 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 6922 2623 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 6950 2650 50  0001 C CNN
+F 3 "~" H 6950 2650 50  0001 C CNN
+	1    6950 2650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7150 2550 7500 2550
+Wire Wire Line
+	7500 2550 7500 2500
+Wire Wire Line
+	4150 3900 4700 3900
+Connection ~ 7500 2500
+Wire Wire Line
+	7150 2650 7150 3000
+Wire Wire Line
+	7150 3000 7800 3000
+Wire Wire Line
+	7800 3000 7800 2800
+Connection ~ 7800 2800
+Wire Wire Line
+	7800 2800 7700 2800
+Wire Wire Line
+	6300 2250 8150 2250
+Wire Wire Line
+	8150 2250 8150 2700
+Wire Wire Line
+	8150 2700 8200 2700
+Connection ~ 6300 2250
+Wire Wire Line
+	6300 2250 6300 2450
+Connection ~ 8150 2700
+Connection ~ 8200 2700
+Wire Wire Line
+	8200 2700 8450 2700
 $EndSCHEMATC

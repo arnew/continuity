@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name continuity)(type Legacy)(uri ${KIPRJMOD}/continuity.lib)(options "")(descr ""))
+)
