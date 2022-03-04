@@ -117,7 +117,7 @@ F 0 "LS1" H 7675 2696 50  0000 L CNN
 F 1 "Speaker_Crystal" H 7675 2605 50  0000 L CNN
 F 2 "Buzzer_Beeper:Buzzer_15x7.5RM7.6" H 7465 2650 50  0001 C CNN
 F 3 "~" H 7465 2650 50  0001 C CNN
-F 4 "VIS 3580" H 7500 2700 50  0001 C CNN "Vendor"
+F 4 "RND 430-00009" H 7500 2700 50  0001 C CNN "Vendor"
 	1    7500 2700
 	-1   0    0    -1  
 $EndComp
@@ -919,8 +919,6 @@ Wire Wire Line
 Wire Wire Line
 	8150 2700 8150 2800
 Wire Wire Line
-	8150 2700 8200 2700
-Wire Wire Line
 	7500 3100 7900 3100
 $Comp
 L Device:R R15
@@ -984,13 +982,10 @@ Wire Wire Line
 	6300 2250 8150 2250
 Wire Wire Line
 	8150 2250 8150 2700
-Wire Wire Line
-	8150 2700 8200 2700
 Connection ~ 6300 2250
 Wire Wire Line
 	6300 2250 6300 2450
 Connection ~ 8150 2700
-Connection ~ 8200 2700
 Wire Wire Line
-	8200 2700 8450 2700
+	8150 2700 8450 2700
 $EndSCHEMATC
